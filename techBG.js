@@ -10,19 +10,16 @@ class Dot {
     constructor(x, y) {
         this.x = x;
         this.y = y;
-        this.dx = Math.random();
-        this.dy = Math.random();
+        this.sign = Math.round(Math.random()) ? 1 : -1;
+        this.dx = Math.random() * this.sign;
+        this.dy = Math.random() * this.sign;
         this.size = Math.floor(Math.random() * 100 +3);
         this.col = 'rgba(255,255,255,.04)';
 
     }
     update() {
-        if (this.x + this.size > CW) {
-            this.dx = this.dx * -1;
-        }
-        if (this.y + this.size > CH) {
-            this.dy = this.dx * -1;
-        }
+        if (this.x > CW - this.size) this.dx *= -1;
+        if (this.y > CH - this.size) this.dy *= -1;
         if (this.x <= 0) this.dx *= -1;
         if (this.y <= 0) this.dy *= -1;
         this.x += this.dx;
