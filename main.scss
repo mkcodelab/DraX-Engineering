@@ -6,6 +6,7 @@
 html {
     scroll-behavior: smooth;
 }
+$violet: rgb(161, 0, 161);
 body {
     background: #ccc;
     width: 100vw;
@@ -43,7 +44,7 @@ body {
 }
 // main nav buttons
 .nav-item {
-    min-width: 10rem;
+    min-width: 12rem;
     text-align: center;
     height: 100%;
     padding: .5rem;
@@ -73,8 +74,7 @@ body {
     min-height: 9rem;
     background: slateblue;
     box-shadow: 2px 2px 10px 0 rgba(0,0,0,.2);
-    // width: 100%;
-    width: 200px;
+    min-width: 12rem;
     ul {
         height: 100%;
         display: flex;
@@ -104,6 +104,7 @@ a, a:visited {
 }
 h1, h2, h3 {
     color: white;
+    text-align: center;
 }
 
 main {
@@ -111,6 +112,7 @@ main {
     height: 100%;
     
 }
+
 .section {
     width: 100%;
     height: 100vh;
@@ -122,14 +124,32 @@ main {
         width: 100%;
         color: white;
         text-align: center;
+        font-size: 2.2rem;
         padding-bottom: 1rem;
         padding-top: 5rem;
         padding-left: 5rem;
         padding-right: 5rem;
+    }
+    // landing page slogan
+    .slogan {
+        font-size: 4rem;
+        padding-top: .5rem;
         animation: h1-anim .4s ease-in-out;
-        // border-bottom: 1px solid rgba(0,0,0,.1);
+    }
+    h2 {
+        font-size: 1.5rem;
     }
 }
+// a, button-like
+.signup {
+    background: rgba(0,0,0,.1);
+    padding: .5rem;
+    font-size: 1.5rem;
+    &:hover {
+        color: $violet;
+    }
+}
+
 
 // canvas
 #techBG {
@@ -140,9 +160,18 @@ main {
     height: 100%;
     filter: blur(5px);
 }
-.slogan {
-    font-size: 3rem;
-    padding-top: .5rem;
+// gradient border spacer
+.grad-border {
+    width: 100%;
+    height: 5px;
+    border-radius: 2px;
+    background: linear-gradient(to right, slateblue, $violet, slateblue);
+}
+.grad-border-light {
+    width: 100%;
+    height: 5px;
+    border-radius: 2px;
+    background: linear-gradient(to right,  $violet, #ccc, $violet);
 }
 .headers {
     position: relative;
@@ -167,24 +196,29 @@ main {
 }
 
 .section--home {
-    background-image: radial-gradient(rgb(161, 0, 161), #50c);
+    background-image: radial-gradient($violet, #50c);
     background-size: cover;
     h2, h3 {
         width: 100%;
         text-align: center;
         padding: .5rem;
     }
-    h2 {
-        animation: h2-slideIn 2s ease;
-    }
-    
 }
-.h3-first {
-    animation: h1-anim 8s ease;
+.h2-first, .h2-second, .h2-third {
+    // opacity: 0;
+    animation: h1-anim 6s ease;
 }
-.h3-last {
-    animation: h1-anim 10s ease;
-}
+// .h2-first {
+//     animation-delay: .5s;
+// }
+// .h2-second {
+//     animation-delay: 1s;
+// }
+// .h2-third {
+//     animation-delay: 1.5s;
+// }
+
+
 @keyframes h2-slideIn {
     0% {
         transform: translateX(-200%)
@@ -193,6 +227,8 @@ main {
         transform: translateX(0);
     }
 }
+
+
 
 .section-wrap {
     // padding: 2rem;
@@ -204,6 +240,16 @@ main {
     width: 40%;
     padding: 3rem;
     color: white;
+    p {
+        padding: 1rem;
+    }
+    span {
+        font-weight: 700;
+        color: $violet;
+    }
+    h2 {
+        padding: 1rem;
+    }
 }
 .section--about {
     background: rgba(0,0,20,.2);

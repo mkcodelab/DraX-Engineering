@@ -44,7 +44,7 @@ body {
 }
 
 .nav-item {
-  min-width: 10rem;
+  min-width: 12rem;
   text-align: center;
   height: 100%;
   padding: .5rem;
@@ -73,7 +73,7 @@ body {
   min-height: 9rem;
   background: slateblue;
   box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.2);
-  width: 200px;
+  min-width: 12rem;
 }
 
 .dropdown-container ul {
@@ -107,6 +107,7 @@ a, a:visited {
 
 h1, h2, h3 {
   color: white;
+  text-align: center;
 }
 
 main {
@@ -125,11 +126,31 @@ main {
   width: 100%;
   color: white;
   text-align: center;
+  font-size: 2.2rem;
   padding-bottom: 1rem;
   padding-top: 5rem;
   padding-left: 5rem;
   padding-right: 5rem;
+}
+
+.section .slogan {
+  font-size: 4rem;
+  padding-top: .5rem;
   animation: h1-anim .4s ease-in-out;
+}
+
+.section h2 {
+  font-size: 1.5rem;
+}
+
+.signup {
+  background: rgba(0, 0, 0, 0.1);
+  padding: .5rem;
+  font-size: 1.5rem;
+}
+
+.signup:hover {
+  color: #a100a1;
 }
 
 #techBG {
@@ -141,9 +162,18 @@ main {
   filter: blur(5px);
 }
 
-.slogan {
-  font-size: 3rem;
-  padding-top: .5rem;
+.grad-border {
+  width: 100%;
+  height: 5px;
+  border-radius: 2px;
+  background: linear-gradient(to right, slateblue, #a100a1, slateblue);
+}
+
+.grad-border-light {
+  width: 100%;
+  height: 5px;
+  border-radius: 2px;
+  background: linear-gradient(to right, #a100a1, #ccc, #a100a1);
 }
 
 .headers {
@@ -178,16 +208,8 @@ main {
   padding: .5rem;
 }
 
-.section--home h2 {
-  animation: h2-slideIn 2s ease;
-}
-
-.h3-first {
-  animation: h1-anim 8s ease;
-}
-
-.h3-last {
-  animation: h1-anim 10s ease;
+.h2-first, .h2-second, .h2-third {
+  animation: h1-anim 6s ease;
 }
 
 @keyframes h2-slideIn {
@@ -209,6 +231,19 @@ main {
   width: 40%;
   padding: 3rem;
   color: white;
+}
+
+.art-box p {
+  padding: 1rem;
+}
+
+.art-box span {
+  font-weight: 700;
+  color: #a100a1;
+}
+
+.art-box h2 {
+  padding: 1rem;
 }
 
 .section--about {
