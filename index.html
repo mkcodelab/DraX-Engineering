@@ -6,12 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.min.css">
+    <link rel="stylesheet" href="responsive.css">
     <title>DraX Engineering Inc.</title>
 </head>
 <body>
     <nav class="navigation">
         <h1 class="title">DraX Engineering inc.</h1>
-        <ul>
+        <button class="menu-btn">Menu</button>
+
+        <ul class="nav-ul">
             <li class="nav-item">
                 <div class="dropdown-btn">
                     <p>Home</p>
@@ -75,7 +78,7 @@
         </section>
         <section class="section section--about">
             <a href="#" id="mission"></a>
-            <h1>We enjoy your presence at our engineering center. Our company presents you the most efficient and versatile problem solving in this world.</h1>
+            <h1 class="section-header-main">We enjoy your presence at our engineering center. Our company presents you the most efficient and versatile problem solving in this world.</h1>
             
             <div class="section-wrap">
                 <div class="art-box">
@@ -93,7 +96,7 @@
         </section>
         <section class="section section-tech">
             <a href="#" id="base-tech"></a>
-            <h1>Base Technology</h1>
+            <h1 class="section-header-main">Base Technology</h1>
             <div class="section-wrap">
                 <div class="art-box">
                     <h2>One of our goals is to provide you the most reliable tech we can tinker.</h2>
@@ -102,39 +105,46 @@
                 <div class="art-box">
                     <h2>Thousands of robots making more robots in our automated factories</h2>
                     <p>This is the future we've spoken about.</p>
+                    <!-- <img src="https://picsum.photos/200/300" alt="pic">
                     <img src="https://picsum.photos/200/300" alt="pic">
-                    <img src="https://picsum.photos/200/300" alt="pic">
-                    <img src="https://picsum.photos/200/300" alt="pic">
+                    <img src="https://picsum.photos/200/300" alt="pic"> -->
                 </div>
 
             </div>
         </section>
         <section class="section custom-tech">
             <a href="#" id="custom-tech"></a>
-            <h1>Custom Technology</h1>
+            <h1 class="section-header-main">Custom Technology</h1>
             <div class="section-wrap">
                 <div class="art-box">
                     <h2>Did you ever wanted to create your own, tailored gear and tools? Now you can.</h2>
-                    <div class="grad-border-light"></div>
+                    <div class="grad-border"></div>
 
                     <p>Our Custom Developement Team can make your dreams come true. All you have to do is to start collaborate with one of our agents. Every idea you come with, will be explored thoroughly</p>
-                    <img src="https://picsum.photos/400/400" alt="custom">
+                    <!-- <img src="https://picsum.photos/400/400" alt="custom"> -->
 
                 </div>
                 <div class="art-box">
                     <h2>Don't be so humble! Every person have some unique ideas to share!</h2>
-                    <div class="grad-border-light"></div>
+                    <div class="grad-border"></div>
 
                     <p>With just a few steps, we can verify your project. You can trust our team. As the project goes on, and it is something that can revolutionize the market, we make the cruicial steps to make You the rightful owner, and the profit we generate is Yours.</p>
                 </div>
             </div>
-            <a href="#" class="signup">Sign Up</a>
+            <button class="signup-btn" id="signupBtn">Sign Up</button>
+            
         </section>
         <section class="section it">
             <a href="#" id="it"></a>
-            <h1>Information Technology</h1>
+            <h1 class="section-header-main">Information Technology</h1>
         </section>
     </main>
+    <form class="signup-form">
+        <h1>Sign up for a collaboration!</h1>
+
+        <button class="signup-btn" id="signupCloseBtn">Close</button>
+    </form>
     <script src="techBG.js"></script>
+    <script src="signup.js"></script>
 </body>
 </html>

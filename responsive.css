@@ -1,0 +1,64 @@
+@media screen and (max-width: 800px) {
+  .slogan {
+    font-size: 1.5rem;
+    /* height: 100%; */
+  }
+
+  h1 {
+    font-size: 1rem;
+  }
+  .h2-first, .h2-second, .h2-third {
+    font-size: 1rem;
+  }
+  .title {
+    font-size: 1rem;
+    padding: 1rem;
+    margin: 0;
+  }
+  .menu-btn {
+    visibility: visible;
+  }
+  .nav-ul {
+    display: none;
+  }
+  .nav-item {
+    min-width: 3rem;
+    font-size: .5rem;
+  }
+  .dropdown-btn {
+    width: 3rem;
+  }
+  .dropdown-container {
+    width: 3rem;
+    transform: translateX(-50%);
+  }
+  .section {
+    width: 100vw;
+    min-height: 100vh;
+  }
+  .section-wrap {
+    flex-direction: column;
+  }
+  
+  .section > h2 {
+    font-size: .7rem;
+  }
+  .art-box {
+    width: 100%;
+    padding: .2rem;
+  }
+  .art-box > h2 {
+    font-size: 1rem;
+  }
+  .grad-border {
+    height: 2px;
+  }
+  .section-header-main {
+    padding: .3rem;
+    padding-top: 3.2rem;
+  }
+  .section-tech {
+    background-position: center;
+    /* filter: brightness(50%); */
+  }
+}
