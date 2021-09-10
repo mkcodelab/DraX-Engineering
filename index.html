@@ -12,13 +12,11 @@
 <body>
     <nav class="navigation">
         <h1 class="title">DraX Engineering inc.</h1>
-        <button class="menu-btn">Menu</button>
-
+        <!-- <button class="menu-btn" id="menuBtn">Menu</button> -->
+        
         <ul class="nav-ul">
             <li class="nav-item">
-                <div class="dropdown-btn">
-                    <p>Home</p>
-                </div>
+                <div class="dropdown-btn">Home</div>
                 <div class="dropdown-container">
                     <ul>
                         <li><a href="#">About Us</a></li>
@@ -28,9 +26,7 @@
                 </div>
             </li>
             <li class="nav-item">
-                <div class="dropdown-btn">
-                    <p>Technology</p>
-                </div>
+                <div class="dropdown-btn">Technology</div>
                 <div class="dropdown-container">
                     <ul>
                         <li><a href="#base-tech">Base Tech</a></li>
@@ -40,9 +36,7 @@
                 </div>
             </li>
             <li class="nav-item">
-                <div class="dropdown-btn">
-                    <p>Transport</p>
-                </div>
+                <div class="dropdown-btn">Transport</div>
                 <div class="dropdown-container">
                     <ul>
                         <li><a href="#">Local</a></li>
@@ -52,9 +46,7 @@
                 </div>
             </li>
             <li class="nav-item">
-                <div class="dropdown-btn">
-                    <p>Contact</p>
-                </div>
+                <div class="dropdown-btn">Contact</div>
                 <div class="dropdown-container">
                     <ul>
                         <li><a href="#">Mail</a></li>
@@ -65,8 +57,13 @@
                 </div>
             </li>
         </ul>
+        <div class="burger-menu">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
     </nav>
-    <main>
+    <main id="main">
         <section class="section section--home">
             <div class="headers">
                 <h1 class="slogan">In Future We Trust. You shall too.</h1>
@@ -146,5 +143,6 @@
     </form>
     <script src="techBG.js"></script>
     <script src="signup.js"></script>
+    <script src="nav.js"></script>
 </body>
 </html>
